@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<define name="all">
+				<include name="header"></include>
+				<include name="dresses"></include>
+				<include name="signIn"></include>
+				<include name="launch"></include>
+					<include name="contact"></include>
+			</define>
+
+			<run>
+				<include name="header"></include>
+				<include name="launch"></include>
+				<include name="contact"></include>
+			</run>
+		</groups>
+
+
+
+		<classes>
+			<class name="com.qa.TestCases.IndexTestCase" />
+			<class name="com.qa.TestCases.ContactUsTest" />
+			<class name="com.qa.TestCases.DressesTestCase" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
