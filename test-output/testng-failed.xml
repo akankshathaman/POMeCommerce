@@ -2,16 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="header"/>
-        <include name="launch"/>
-        <include name="contact"/>
-      </run>
-    </groups>
     <classes>
       <class name="com.qa.TestCases.ContactUsTest">
         <methods>
+          <include name="checkSignInFunc"/>
+          <include name="checkSignInLink"/>
           <include name="checkContactUs"/>
         </methods>
       </class> <!-- com.qa.TestCases.ContactUsTest -->
